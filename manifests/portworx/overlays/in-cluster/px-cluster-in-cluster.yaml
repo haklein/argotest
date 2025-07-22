@@ -4,4 +4,4 @@ metadata:
 name: px-cluster
 namespace: portworx
 annotations:
-portworx.io/service-type: "portworx-api:LoadBalancer"
+  portworx.io/service-type: "portworx-api:LoadBalancer"
