@@ -1,5 +1,5 @@
-kind: StorageCluster
 apiVersion: core.libopenstorage.org/v1
+kind: StorageCluster
 metadata:
   name: px-cluster
   namespace: portworx
