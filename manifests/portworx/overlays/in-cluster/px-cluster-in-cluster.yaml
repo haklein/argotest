@@ -1,7 +1,7 @@
 apiVersion: core.libopenstorage.org/v1
 kind: StorageCluster
 metadata:
-  name: px-cluster
+  name: in-cluster
   namespace: portworx
 annotations:
   portworx.io/service-type: "portworx-api:LoadBalancer"
