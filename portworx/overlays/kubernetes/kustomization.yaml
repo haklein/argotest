@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - ../../resources
 patches:
-- path: px-cluster-demo1.yaml
+- path: px-cluster-kubernetes.yaml
