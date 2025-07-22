@@ -1,4 +1,4 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- https://install.portworx.com/3.3?operator=true&mc=false&kbver=1.33.0&ns=portworx&b=true&iop=6&c=px-cluster-2d0b3cdf-0ba8-490b-88eb-6b5b0f2b0348&stork=true&csi=true&mon=true&tel=true&st=k8s&promop=true
+- https://install.portworx.com/?comp=pxoperator&kbver=1.33.3&ns=portworx
