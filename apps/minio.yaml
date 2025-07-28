@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: in-cluster-minio
+  namespace: argocd
+spec:
+  destination:
+    name: in-cluster
+    namespace: minio
+  project: default
+  source:
+    repoURL: https://github.com/haklein/argotest
+    targetRevision: HEAD
+    path: manifests/minio/base
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
