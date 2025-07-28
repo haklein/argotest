@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: in-cluster-portworx
+  namespace: argocd
+spec:
+  destination:
+    name: 'in-cluster'
+    namespace: 'portworx'
+  source:
+    path: manifests/portworx/overlays/in-cluster
+    repoURL: 'https://github.com/haklein/argotest'
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    automated: {}
