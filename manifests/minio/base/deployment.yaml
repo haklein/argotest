@@ -19,8 +19,12 @@ spec:
           args:
             - server
             - /data
+            - --console-address :9090
           ports:
             - containerPort: 9000
+              name: s3
+            - containerPort: 9090
+              name: admin
           volumeMounts:
             - name: data
               mountPath: /data
