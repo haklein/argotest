@@ -17,7 +17,7 @@ spec:
         - name: minio
           image: minio/minio:latest
           args:
-            - minio server /data --console-address :9090
+            - server /data --console-address :9090
           ports:
             - containerPort: 9000
               name: s3
